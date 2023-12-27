@@ -4,10 +4,10 @@ import More from "../components/More";
 
 const File = () => {
   const { fileid } = useParams();
-  const { urls, data } = useFilesData(fileid);
+  const { data } = useFilesData(fileid);
 
   // console.log(urls);
-  // console.log(data);
+  console.log(data);
   return (
     <div className="px-4 mt-[4rem] text-[#335c67] ">
       <h1 className="text-center mb-6 font-bold text-2xl">Easy Share</h1>
@@ -27,7 +27,7 @@ const File = () => {
                 <td className="p-2">{item.contentType}</td>
                 <td className="p-2 ">{item.size}</td>
                 <td className="p-2 relative cursor-pointer">
-                  <More urls={urls} index={index} name={item.name} />
+                  <More data={data} index={index} />
                 </td>
               </tr>
             ))}

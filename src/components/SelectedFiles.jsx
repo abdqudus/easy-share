@@ -11,7 +11,7 @@ const SelectedFiles = () => {
         return (
           <div
             key={id}
-            className="overflow-hidden whitespace-nowrap text-ellipsis border-[1px] border-red-500 max-[360px]:flex-col max-[360px]:items-start max-[360px]:gap-1 flex gap-2 px-2 items-center justify-between "
+            className="overflow-hidden flex-wrap whitespace-nowrap text-ellipsis border-[1px] border-red-500 max-[360px]:flex-col max-[360px]:flex-nowrap  max-[360px]:items-start max-[360px]:gap-1 flex gap-2 px-2 items-center justify-between "
           >
             <span
               id={id}
@@ -20,9 +20,9 @@ const SelectedFiles = () => {
             >
               &#10060;
             </span>
-            <p className="flex justify-center items-center ">
+            <p className="flex  gap-1 justify-center max-w-[40%] max-[360px]:max-w-[100%] items-center ">
               <img src={File} alt="" width={15} height={15} />
-              <span className="overflow-hidden whitespace-nowrap text-ellipsis">
+              <span className="overflow-hidden whitespace-nowrap text-ellipsis  ">
                 {file.name}
               </span>
             </p>

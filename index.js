@@ -9,9 +9,8 @@ const firebaseConfig = {
   storageBucket: "easy-share-7982e.appspot.com",
   messagingSenderId: "916767209600",
   appId: "1:916767209600:web:28445d87a6a6b8d5828e65",
-  measurementId: "G-SKRP2BGJ5N"
+  measurementId: "G-SKRP2BGJ5N",
 };
-
 
 const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);

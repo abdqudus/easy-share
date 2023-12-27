@@ -5,6 +5,7 @@ import useUploadFile from "../customhooks/useUploadFile";
 import { useSelectFile } from "../customhooks/useFileCOntext";
 
 const UploadFile = () => {
+  console.log("rendered upload page");
   const { url, handleUpload } = useUploadFile();
   const { dragActive, selectedFiles, handleDrag, handleDrop } = useSelectFile();
 

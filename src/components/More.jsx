@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Arrow from "../../img/arrow-down.png";
-const More = ({ urls, index, name }) => {
+const More = ({ urls, index,  }) => {
   const [showDetails, setShowDetails] = useState(false);
   const handleDownload = (url) => {
     console.log(url);
+   
   };
   return (
     <>
@@ -26,7 +27,7 @@ const More = ({ urls, index, name }) => {
       >
         <button
           className="w-max rounded-lg text-[#fff3b0]"
-          onClick={() => handleDownload(urls[index], name)}
+          onClick={() => handleDownload(urls[index])}
         >
           Download
         </button>
