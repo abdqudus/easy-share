@@ -5,9 +5,6 @@ import More from "../components/More";
 const File = () => {
   const { fileid } = useParams();
   const { data } = useFilesData(fileid);
-
-  // console.log(urls);
-  console.log(data);
   return (
     <div className="px-4 mt-[4rem] text-[#335c67] ">
       <h1 className="text-center mb-6 font-bold text-2xl">Easy Share</h1>

@@ -1,10 +1,9 @@
 import { useState } from "react";
 import Arrow from "../../img/arrow-down.png";
-const More = ({ urls, index,  }) => {
+const More = ({ urls, index }) => {
   const [showDetails, setShowDetails] = useState(false);
   const handleDownload = (url) => {
     console.log(url);
-   
   };
   return (
     <>
