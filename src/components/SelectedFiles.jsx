@@ -4,6 +4,7 @@ import { useSelectFile } from "../customhooks/useFileCOntext";
 
 const SelectedFiles = () => {
   const { selectedFiles, handleRemove } = useSelectFile();
+  if (selectedFiles.length == 0) return;
   return (
     <div className="max-w-[700px] flex flex-col gap-2 p-2 w-[80%] max-h-[300px] border-[#335c67] border-[1px] mt-4 overflow-auto">
       {selectedFiles.map((f) => {
