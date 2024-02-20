@@ -1,6 +1,5 @@
-import Proptypes from "prop-types";
 import File from "../../img/icons8-file-24.png";
-import { useSelectFile } from "../customhooks/useFileCOntext";
+import { useSelectFile } from "../customhooks/useFileContext";
 
 const SelectedFiles = () => {
   const { selectedFiles, handleRemove } = useSelectFile();
