@@ -1,5 +1,5 @@
 import Upload from "../../img/upload-icon.png";
-import { useSelectFile } from "../customhooks/useFileCOntext";
+import { useSelectFile } from "../customhooks/useFileContext";
 const Form = () => {
   const { dragActive, handleDrag, handleDrop, handleSelect } = useSelectFile();
   const border = dragActive ? 'border-green-800 border-4' : 'border-[#335c67] border-2'
