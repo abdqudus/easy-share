@@ -1,12 +1,16 @@
 import Upload from "../../img/upload-icon.png";
 import { useSelectFile } from "../customhooks/useFileCOntext";
 const Form = () => {
-  const { dragActive, handleDrag, handleDrop } = useSelectFile();
-
+  const { dragActive, handleDrag, handleDrop, handleSelect } = useSelectFile();
+  const border = dragActive ? 'border-green-800 border-4' : 'border-[#335c67] border-2'
+  console.log()
   return (
     <form
       onDragEnter={handleDrag}
-      className="relative w-[80%] px-4 py-3 flex items-center justify-center flex-col' mx-auto mt-6 max-w-[700px] rounded-xl border-dashed border-[#335c67] border-2"
+
+      className=
+      {`relative w-[80%] px-4 py-3 flex items-center justify-center flex-col' mx-auto mt-6 max-w-[700px] rounded-xl border-dashed ${border} `}
+
     >
       <label
         htmlFor="file"
@@ -22,10 +26,10 @@ const Form = () => {
           />
         </div>
         <p className="flex items-center justify-center text-center ">
-          Click to upload or drag and drop
+          {dragActive ? ' You can drop it now' : 'Click to upload or drag and drop'}
         </p>
       </label>
-      <input multiple type="file" name="" id="file" className="sr-only" />
+      <input onChange={handleSelect} multiple type="file" name="" id="file" className="sr-only" />
       {dragActive && (
         <div
           className="absolute w-full h-full inset-0 rounded-xl"

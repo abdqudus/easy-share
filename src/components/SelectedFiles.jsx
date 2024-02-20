@@ -6,13 +6,13 @@ const SelectedFiles = () => {
   const { selectedFiles, handleRemove } = useSelectFile();
   if (selectedFiles.length == 0) return;
   return (
-    <div className="max-w-[700px] flex flex-col gap-2 p-2 w-[80%] max-h-[300px] border-[#335c67] border-[1px] mt-4 overflow-auto">
+    <div className="max-w-[700px] flex flex-col gap-2 p-2 w-[80%] max-h-[300px] mt-4 overflow-auto">
       {selectedFiles.map((f) => {
         const { file, id } = f;
         return (
           <div
             key={id}
-            className="overflow-hidden flex-wrap whitespace-nowrap text-ellipsis border-[1px] border-red-500 max-[360px]:flex-col max-[360px]:flex-nowrap  max-[360px]:items-start max-[360px]:gap-1 flex gap-2 px-2 items-center justify-between "
+            className="overflow-hidden flex-wrap whitespace-nowrap text-ellipsis border-[1px] border-[#335c67] rounded-lg max-[360px]:flex-col max-[360px]:flex-nowrap  max-[360px]:items-start max-[360px]:gap-1 flex gap-2 px-2 items-center justify-between "
           >
             <span
               id={id}
@@ -40,8 +40,5 @@ const SelectedFiles = () => {
     </div>
   );
 };
-SelectedFiles.propTypes = {
-  selectedFiles: Proptypes.array,
-  setSelectedFiles: Proptypes.func,
-};
+
 export default SelectedFiles;
