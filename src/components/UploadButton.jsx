@@ -1,4 +1,4 @@
-import { useSelectFile } from "../customhooks/useFileCOntext";
+import { useSelectFile } from "../customhooks/useFileContext";
 
 const UploadButton = ({ handleUpload, isLoading }) => {
   const { selectedFiles } = useSelectFile();
