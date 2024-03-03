@@ -1,8 +1,6 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a file sharing app .  A user can upload a file. Then a certain url is sent to this user. This URL can be shared to whoever needs the uploaded file.
+When the intended recipient of the file navigates to the URL, then the person can download the file.
+[Check it out on](https://abdqudus-easy share netlify.app)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
