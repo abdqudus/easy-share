@@ -3,7 +3,7 @@ import Arrow from "../../img/arrow-down.png";
 import { supabase } from "../..";
 import { download, formatBytes } from "../utils";
 
-import About from "./About";
+import About from "./About.jsx";
 const More = ({ data, index, fileid }) => {
   const [isOpen, setIsOpen] = useState(false)
   const file = data[index]

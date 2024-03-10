@@ -10,7 +10,7 @@ export const upload = async (file, id) => {
 export const download = (downloadUrl) => {
   const downloadLink = document.createElement("a");
   downloadLink.href = downloadUrl;
-  downloadLink.download = name; // Specify the filename for the downloaded file
+  downloadLink.download = "download";
   document.body.appendChild(downloadLink);
 
   // Programmatically click on the anchor element to initiate the download
