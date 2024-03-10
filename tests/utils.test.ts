@@ -1,5 +1,5 @@
 import { formatBytes } from "../src/utils";
-import { it, expect, describe, vitest } from "vitest";
+import { it, expect, describe } from "vitest";
 
 describe("formatBytes", () => {
   it("should return 1023 bytes when passed with 1023", () => {
